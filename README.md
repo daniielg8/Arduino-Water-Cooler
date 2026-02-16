@@ -54,9 +54,37 @@ System will exit this state when the Start/Stop button is pressed, which will to
 
 ## IDLE State
 In this state most but not all main functions are enabled. This state is indicated by a GREEN status LED and the IDLE message is displayed to the LCD.
-Temperature, humidity, and water-level monitoring is enabled and output to the LCD.
-The fan motor is turned OFF.
-System can exit this state in several ways:
-Exits upon press of the Start/Stop button (enters DISABLED)
-Exits upon temperature falling outside of the threshold (enters RUNNING)
-Exits upon water-level falling outside of the threshold (enters ERROR)
+
+### Main components that are affected:
+* Temperature, humidity, and water-level monitoring is enabled and readings are outputted to the LCD.
+* The fan motor is turned OFF.
+
+### System can exit this state in several ways:
+* Exits upon toggle of the Start/Stop button (enters DISABLED state)
+* Exits upon temperature falling outside of the set threshold level (enters RUNNING state)
+* Exits when the water-level is lower then the set threshold level (enters ERROR state)
+
+## RUNNING State
+In this state all functions are enabled. This state is indicated by a BLUE status LED and the RUNNING message is displayed to the LCD.
+
+### Main components that are affected:
+* Indicated by a BLUE status LED and the RUNNING message displayed to the LCD.
+* Temperature, humidity, and water-level monitoring is enabled and output to the LCD.
+* The fan motor is turned ON.
+
+### System can exit this state in several ways:
+* Exits upon toggle of the Start/Stop button (enters DISABLED state)
+* Exits when the temperature set threshold is satisfied (enters IDLE state)
+* Exits when the water-level is lower then the set threshold level (enters ERROR state)
+
+## ERROR State
+In this state most functions are disabled. This state is indicated by a RED status LED and the ERROR message displayed to the LCD.
+
+### Main components that are affected:
+* Temperature, humidity, and water-level monitoring is disabled.
+* The fan motor is turned OFF.
+* An error message is displayed to the LCD.
+
+### System can exit this state in several ways:
+* Exits upon toggle of the Start/Stop button (enters DISABLED state)
+* Exits upon press of the Reset button if water-level threshold is satisfied (enters IDLE state)
