@@ -1,4 +1,4 @@
-// Daniel Garcia and Joaquin Salazar
+// Daniel Garcia
 
 #include "serial.h"
 // UART Pointers

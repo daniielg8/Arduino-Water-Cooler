@@ -1,8 +1,7 @@
-// Daniel Garcia and Joaquin Salazar
+// Daniel Garcia
 
 #ifndef WATERSENSOR_H
 #define WATERSENSOR_H
-
 
 void adc_init();
 
