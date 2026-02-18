@@ -88,3 +88,7 @@ In this state most functions are disabled. This state is indicated by a RED stat
 ### System can exit this state in several ways:
 * Exits upon toggle of the Start/Stop button (enters DISABLED state)
 * Exits upon press of the Reset button if water-level threshold is satisfied (enters IDLE state)
+
+## Demonstration Video of States
+
+visit the [demo of the states](https://youtu.be/uywrXzvMU14) on youtube!
