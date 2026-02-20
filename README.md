@@ -37,7 +37,7 @@ The microcontroller used in this project is the Arduino mega 2560 alongside sens
 * Jumper Wires
 
 # Schematic
-<img width="693" height="600" alt="image" src="https://github.com/user-attachments/assets/7c248e32-3804-4bc5-9aa0-67d6ebfca2b2" />
+<img width="693" height="600" alt="image" src="water-cooler-schematic.png"/>
 
 # Operation Procedure
 The water evaporation cooler has 4 states, each with different components being monitor/used. 
